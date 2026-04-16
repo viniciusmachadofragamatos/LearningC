@@ -31,5 +31,10 @@ int main() {
     printf("%o\n",9);
     printf("%o",94);
     //hexadecimais -> 2 formas
-
+    //Lowercase (%x)    
+    printf("%x\n", 27);
+    printf("%x\n", 430);
+    //Uppercase (%X)
+    printf("%X\n", 27);
+    printf("%X", 430);
 }
