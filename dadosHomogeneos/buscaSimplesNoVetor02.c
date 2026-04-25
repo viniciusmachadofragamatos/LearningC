@@ -6,23 +6,24 @@ int main(){
         scanf("%d", &v[i]);
     }
     int x;
-    int y = 0;
-    int z[10];
     scanf("%d", &x);
 
+    int y = 0;
+    int z[10];
     for(int i = 0; i < 10; i++){
         if(v[i] == x){
-            y = y + 1 ;
             z[i] = i;
+            y = y + 1 ;
+            
         }
     }
     if(y == 0){
         printf("Mia x");
-    }
-    printf("%d",y);
-    for(int i = 0; i< 10; i++){
-        if(z[i] != 0){
+    } else{
+        printf("%d\n",y);
+        for(int i = 0; i< 10; i++){
             printf("%d\n", z[i]);
-        } 
     }
+
+    return 0;
 }
