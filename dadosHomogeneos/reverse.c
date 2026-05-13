@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+    int v[10];
+    int reverse[10];
+    int i;
+    for(i=0;i<10;i++){
+        scanf("%d", &v[i]);
+    }
+
+    for(i=9;i>=0;i--){
+        reverse[i] = v[9-i]; 
+    }
+
+    for(i=0; i<10;i++){
+        printf("%d\n", reverse[i]);
+    }
+    return 0;
+}
